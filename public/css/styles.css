@@ -754,7 +754,7 @@ main div section div form p button {
   width: 6rem;
   font-size: 0.95rem;
   text-align: right;
-  transform: translate(3rem, -85%);
+  transform: translate(3rem, -50%);
   transition: all 0.35s;
 }
 
@@ -784,7 +784,7 @@ main div section div form p button {
 
 .input-form-control-email:focus ~ .form-label-email-sm {
   opacity: 1;
-  transform: translate(-2rem, -35%);
+  transform: translate(-2rem, -50%);
 }
 
 .form-wrapper-psw {
@@ -812,7 +812,7 @@ main div section div form p button {
   width: 6rem;
   font-size: 0.95rem;
   text-align: right;
-  transform: translate(3rem, -85%);
+  transform: translate(3rem, -50%);
   transition: all 0.35s;
 }
 
@@ -842,7 +842,7 @@ main div section div form p button {
 
 .input-form-control-psw:focus ~ .form-label-psw-sm {
   opacity: 1;
-  transform: translate(-2rem, -35%);
+  transform: translate(-2rem, -50%);
 }
 
 .forgot-psw {
