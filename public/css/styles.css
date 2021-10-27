@@ -738,7 +738,6 @@ main div section div form p button {
 
 .form-label-email {
   position: absolute;
-  left: 0;
   top: 33px;
   left: 30px;
   color: #888;
@@ -761,10 +760,9 @@ main div section div form p button {
 
 .input-form-control-email {
   position: absolute;
-  left: 15px;
   height: inherit;
-  width: 16rem;
-  width: 85%;
+  left: 15px;
+  width: 95%;
   border: 0;
   border-bottom: 2px solid #888;
   outline: none;
@@ -786,49 +784,65 @@ main div section div form p button {
 
 .input-form-control-email:focus ~ .form-label-email-sm {
   opacity: 1;
-  transform: translate(-1.5rem, -35%);
+  transform: translate(-2rem, -35%);
 }
 
 .form-wrapper-psw {
   position: relative;
+  overflow: hidden;
   display: flex;
   height: 4rem;
 }
 
 .form-label-psw {
   position: absolute;
-  top: 85%;
-  left: 0.65rem;
-  transform: translateY(-50%);
+  top: 33px;
+  left: 30px;
   color: #888;
-  padding: 0.25rem 0.5rem;
+  transform: translate(0, -50%);
+  transition: all 0.35s;
+}
+
+.form-label-psw-sm {
+  position: absolute;
+  top: 50%;
+  color: #888;
   pointer-events: none;
+  right: 10px;
+  width: 6rem;
+  font-size: 0.95rem;
+  text-align: right;
+  transform: translate(3rem, -85%);
   transition: all 0.35s;
 }
 
 .input-form-control-psw {
+  position: absolute;
+  left: 15px;
   height: inherit;
-  width: 100%;
-  align-items: center;
-  border: 2px solid #888;
-  border-radius: 0.5rem;
+  width: 95%;
+  border: 0;
+  border-bottom: 2px solid #888;
   outline: none;
-  background: transparent;
+  background-color: #ffffff 0.5;
   color: black;
   font-size: 1rem;
   text-indent: 1rem;
-  margin: 24px 3px;
   transition: all 0.35s;
 }
 
 .input-form-control-psw:focus { 
-  border-color: black; 
+  border-bottom-color: #ff424d; 
 }
 
 .input-form-control-psw:focus ~ .form-label-psw {
-  background: #f8f8f8;
-  color: black;
-  transform: translateY(-2.875rem);
+  opacity: 0;
+  transform: translate(-3rem, -50%);
+}
+
+.input-form-control-psw:focus ~ .form-label-psw-sm {
+  opacity: 1;
+  transform: translate(-2rem, -35%);
 }
 
 .forgot-psw {
